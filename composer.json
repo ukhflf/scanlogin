@@ -1,0 +1,36 @@
+{
+    "name": "ukhflf/scanlogin",
+    "description": "wechat work scan code login laravel extention",
+    "type": "composer-plugin",
+    "authors": [
+        {
+            "name": "ukhflf",
+            "email": "317583717@qq.com"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {
+        "php": "^7.1.3",
+        "barryvdh/laravel-debugbar": "^3.2",
+        "overtrue/laravel-wechat": "~5.0",
+        "overtrue/wechat": "^4.2"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Ukhflf\\Scanlogin\\" : "packages/scanlogin/src/"
+        }
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Barryvdh\\Debugbar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Barryvdh\\Debugbar\\Facade"
+            }
+        }
+    }
+
+}
