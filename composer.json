@@ -18,18 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Ukhflf\\Scanlogin\\" : "packages/scanlogin/src/"
-        }
-    },
-
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Barryvdh\\Debugbar\\ServiceProvider"
-            ],
-            "aliases": {
-                "Debugbar": "Barryvdh\\Debugbar\\Facade"
-            }
+            "Ukhflf\\Scanlogin\\" : "src/"
         }
     }
 
