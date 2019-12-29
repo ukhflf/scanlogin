@@ -1,7 +1,6 @@
 {
     "name": "ukhflf/scanlogin",
     "description": "wechat work scan code login laravel extention",
-    "type": "composer-plugin",
     "license" : "MIT",
     "authors": [
         {
