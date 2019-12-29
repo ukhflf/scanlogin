@@ -2,6 +2,7 @@
     "name": "ukhflf/scanlogin",
     "description": "wechat work scan code login laravel extention",
     "type": "composer-plugin",
+    "license" : "MIT",
     "authors": [
         {
             "name": "ukhflf",
@@ -19,6 +20,18 @@
     "autoload": {
         "psr-4": {
             "Ukhflf\\Scanlogin\\" : "src/"
+        }
+    },
+
+    "require-dev" : {
+        "illuminate/framework" : "5.5.x"
+    },
+
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Ukhflf\\Scanlogin\\ScanloginServiceProvider"
+            ]
         }
     }
 
