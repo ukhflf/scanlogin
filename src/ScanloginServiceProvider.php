@@ -41,7 +41,7 @@ class ScanloginServiceProvider extends ServiceProvider
         $this->publishes([__DIR__.'/../database/migrations' => database_path('migrations')], 'scanlogin');
         $this->publishes([__DIR__.'/../views' => base_path('resources/views/vendor/scanlogin')], 'scanlogin');
         $this->loadViewsFrom(__DIR__.'/../views', 'scanlogin');
-        $this->loadRoutesFrom(__DIR__.'/routes.php');
+//        $this->loadRoutesFrom(__DIR__.'/routes.php');
         //php artisan vendor:publish --provider="Ukhflf\Scanlogin\ScanloginServiceProvider"
     }
 
