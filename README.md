@@ -14,9 +14,15 @@ easywechat 安装 https://github.com/overtrue/wechat
 laravel-wechat 安装 https://github.com/overtrue/laravel-wechat  
 
 ## 配置
+
 在根目录config/app.php providers 中添加 Ukhflf\Scanlogin\ScanloginServiceProvider::class  
+
 发布配置信息 php artisan vendor:publish --provider="Ukhflf\Scanlogin\ScanloginServiceProvider"  
-完成后会在config/ 文件夹中找到 scanlogin.php 分别填写您企业微信的appid、agentid、redirect_uri
+
+完成后会在config/ 文件夹中找到 scanlogin.php 分别填写您企业微信的appid、agentid、redirect_uri  
+
+执行php artisan migrate
+
 
 ## 扫码登陆页面
 http://yourhost/admin/scanlogin
